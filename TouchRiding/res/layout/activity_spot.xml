@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#3AAD36">
+    
+    <ImageView 
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="2"  android:gravity="center"
+        android:src="@drawable/logo04"/> 
+    
+    <TextView
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="3"  android:gravity="center"
+        android:text="SPOT INFORMATION"  android:textSize="30dp"  android:textColor="@android:color/white"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"  android:layout_margin="20dp" >        
+        <TextView 
+            android:layout_width="fill_parent"  android:layout_height="fill_parent"  android:text="spot name"
+            android:textColor="@android:color/white"  android:gravity="center"  android:id="@+id/text_spot_info"/>              
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"  android:layout_margin="20dp" >        
+        <TextView 
+            android:layout_width="fill_parent"  android:layout_height="fill_parent"  android:text="number of visitors"
+            android:textColor="@android:color/white"  android:gravity="center"  android:id="@+id/text_num_of_visitors"/>              
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"  android:layout_margin="20dp" >        
+        <TextView 
+            android:layout_width="fill_parent"  android:layout_height="fill_parent"  android:text="number one visitor"
+            android:textColor="@android:color/white"  android:gravity="center"  android:id="@+id/text_num_one_visitor"/>              
+    </LinearLayout>    
+    
+</LinearLayout>

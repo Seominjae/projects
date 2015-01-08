@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#3AAD36">
+    
+    <ImageView 
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="2"  android:gravity="center"
+        android:src="@drawable/logo04"/>   
+    
+    <TextView 
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="4"
+        android:id="@+id/text_userinfo"  android:textSize="20dp"  android:gravity="center"  android:text="UserInformation"
+        android:layout_marginTop="20dp"  android:textColor="@android:color/white"/>
+    
+    <Button 
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"
+        android:id="@+id/btn_passport" android:text="PASSPORT"  android:textSize="20dp"  
+        android:layout_marginLeft="40dp"  android:layout_marginRight="40dp"  android:layout_marginTop="20dp"/>
+    
+    <Button 
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"
+        android:id="@+id/btn_map" android:text="MAP"  android:textSize="20dp"  
+        android:layout_marginLeft="40dp"  android:layout_marginRight="40dp"  android:layout_marginTop="20dp"/>
+    
+    <Button 
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"
+        android:id="@+id/btn_nfcread" android:text="NFC READ"  android:textSize="20dp"  
+        android:layout_marginLeft="40dp"  android:layout_marginRight="40dp"  android:layout_marginTop="20dp"  android:layout_marginBottom="20dp"/>
+    
+</LinearLayout>

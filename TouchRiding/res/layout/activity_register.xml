@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#3AAD36">
+    
+    <ImageView 
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="2"  android:gravity="center"
+        android:src="@drawable/logo04"/> 
+    
+    <TextView
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="2"  android:gravity="center"
+        android:text="NEW ACCOUNT"  android:textSize="30dp"  android:textColor="@android:color/white"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"  android:layout_margin="10dp" >        
+        <TextView 
+            android:layout_width="0dp"  android:layout_height="fill_parent"  android:layout_weight="1"  android:text="Nickname"  
+            android:textColor="@android:color/white"  android:gravity="center"/>        
+        <EditText
+            android:id="@+id/text_nickname"  android:layout_width="0dp"  android:layout_height="fill_parent"  android:layout_weight="3"  android:singleLine="true"/>        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"  android:layout_margin="10dp" >        
+        <TextView 
+            android:layout_width="0dp"  android:layout_height="fill_parent"  android:layout_weight="1"  android:text="ID"  
+            android:textColor="@android:color/white"  android:gravity="center"/>        
+        <EditText
+            android:id="@+id/text_id"  android:layout_width="0dp"  android:layout_height="fill_parent"  android:layout_weight="7"  android:singleLine="true"/>        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"  android:layout_margin="10dp" >        
+        <TextView 
+            android:layout_width="0dp"  android:layout_height="fill_parent"  android:layout_weight="1"  android:text="PW"  
+            android:textColor="@android:color/white"  android:gravity="center"/>        
+        <EditText
+            android:id="@+id/text_pw"  android:layout_width="0dp"  android:layout_height="fill_parent"  android:layout_weight="7"  android:password="true"/>        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"  android:layout_margin="10dp" >        
+        <TextView 
+            android:layout_width="0dp"  android:layout_height="fill_parent"  android:layout_weight="1"  android:text="Age"  
+            android:textColor="@android:color/white"  android:gravity="center"/>        
+        <Spinner
+            android:id="@+id/spinner_age"  android:layout_width="0dp"  android:layout_height="fill_parent"  android:layout_weight="3"
+            android:entries="@array/age"  android:prompt="@string/prompt_age"/>        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"  android:layout_margin="10dp" >        
+        <TextView 
+            android:layout_width="0dp"  android:layout_height="fill_parent"  android:layout_weight="1"  android:text="Sex"  
+            android:textColor="@android:color/white"  android:gravity="center"/>        
+        <Spinner
+            android:id="@+id/spinner_sex"  android:layout_width="0dp"  android:layout_height="fill_parent"  android:layout_weight="3"
+            android:entries="@array/sex"  android:prompt="@string/prompt_sex"/>        
+    </LinearLayout>
+   
+        
+    <Button
+        android:id="@+id/btn_register" android:layout_width="fill_parent"  android:layout_height="0dp"  android:layout_weight="1"
+        android:layout_margin="10dp"  android:text="REGISTER"  android:layout_gravity="center"/>        
+    
+</LinearLayout>
