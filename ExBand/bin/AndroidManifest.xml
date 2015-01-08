@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jiam.expatch"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="11" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.jiam.expatch.IntroActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LobbyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MypageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".PlanningActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ResultActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".TestActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".AddplanActivity"
+            android:screenOrientation="portrait"
+              android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".activity_show_excercise1"
+            android:screenOrientation="portrait"
+              android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name=".activity_show_excercise2"
+            android:screenOrientation="portrait"
+              android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity android:name="DeviceListActivity"></activity>
+    </application>
+
+</manifest>

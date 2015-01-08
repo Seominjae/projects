@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prompt_sex">성별</string>
+    <string name="prompt_exercise">운동 종류</string>
+    
+    <string-array name="sex">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    
+    <string-array name="exercise">
+        <item>Select</item>
+        <item>Exercise A</item>
+        <item>Exercise B</item>
+        <item>Exercise C</item>
+        <item>Exercise D</item>
+        <item>Exercise E</item>
+        <item>Exercise F</item>
+        <item>Exercise G</item>
+        <item>Exercise H</item>
+        <item>Exercise I</item>
+        <item>Exercise J</item>
+    </string-array>
+    
+</resources>

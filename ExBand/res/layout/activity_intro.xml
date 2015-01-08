@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backfff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logoy" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="EXBAND"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:textSize="35sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Your tiny trainer on the band"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="4"
+        android:gravity="center|bottom" >
+
+        <Button
+            android:id="@+id/sign_button"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttontest"
+            android:layout_marginBottom="15dp"
+            android:text="START WITH SIGN-IN"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" 
+            android:gravity="center_vertical|left"
+            android:paddingLeft="25dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
