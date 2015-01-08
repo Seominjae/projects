@@ -1,0 +1,64 @@
+# view res/layout/activity_edit.xml #generated:10
+-keep class android.opengl.GLSurfaceView { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.google.android.gcm.GCMBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+# view AndroidManifest.xml #generated:64
+-keep class com.google.cloud.backend.GCMIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.google.cloud.backend.sample.guestbook.GuestbookActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.google.cloud.backend.sample.guestbook.IntroductionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class kmucs.capstone.furnidiy.BoardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class kmucs.capstone.furnidiy.CameraActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class kmucs.capstone.furnidiy.ContentsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class kmucs.capstone.furnidiy.EditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class kmucs.capstone.furnidiy.FAQActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class kmucs.capstone.furnidiy.FileOpenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class kmucs.capstone.furnidiy.FileSaveActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class kmucs.capstone.furnidiy.IntroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class kmucs.capstone.furnidiy.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class kmucs.capstone.furnidiy.ReadActivity { <init>(...); }
+
+# view res/layout/action_item_horizontal.xml #generated:10
+# view res/layout/action_item_vertical.xml #generated:9
+# view res/layout/activity_edit.xml #generated:110
+# view res/layout/activity_edit.xml #generated:46
+# view res/layout/activity_edit.xml #generated:77
+# view res/layout/activity_edit.xml #generated:93
+# view res/layout/item_texture.xml #generated:9
+-keep class kmucs.capstone.furnidiy.SquareLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class kmucs.capstone.furnidiy.TabMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class kmucs.capstone.furnidiy.TextureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class kmucs.capstone.furnidiy.WriteActivity { <init>(...); }
+

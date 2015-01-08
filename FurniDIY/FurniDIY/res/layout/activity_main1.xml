@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuestbookActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLines="@integer/single_line" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:enabled="true"
+            android:src="@drawable/ic_send" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <ListView
+            android:id="@+id/posts_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/offwhite"
+            android:focusable="false"
+            android:focusableInTouchMode="false" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/announce_text"
+            style="@style/AnnounceText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/medium_grey"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/no_messages"
+            style="@style/DisplayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:text="@string/no_messages"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

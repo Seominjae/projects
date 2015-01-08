@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+   	package="com.google.cloud.backend"
+    >
+
+    <permission
+        android:name="com.google.cloud.backend.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.cloud.backend.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+     <uses-permission android:name="android.permission.CAMERA" />
+     
+     <uses-feature android:name="android.hardware.camera" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    
+
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="13" />
+               
+        <activity
+            android:name="kmucs.capstone.furnidiy.IntroActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+<!--
+ You can replace the android:name attribute above with one of the the following
+ lines to choose a sample:
+
+            android:name="com.google.cloud.backend.sample.guestbook.GuestbookActivity"
+            android:name="com.google.cloud.backend.sample.socialtalk.SocialTalkActivity"
+-->
+
+        <service android:name="com.google.cloud.backend.GCMIntentService"/>
+
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.google.cloud.solutions.sampleapps.mobilebackend"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.cloud.backend.GCMIntentService"/>
+        
+               
+        <activity android:name="kmucs.capstone.furnidiy.TextureActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.EditActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.MainActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.TabMainActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.BoardActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.FAQActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.WriteActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.ReadActivity"></activity>
+        <activity android:name="com.google.cloud.backend.sample.guestbook.GuestbookActivity"></activity>
+        <activity android:name="com.google.cloud.backend.sample.guestbook.IntroductionActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.ContentsActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.FileOpenActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.FileSaveActivity"></activity>
+        <activity android:name="kmucs.capstone.furnidiy.CameraActivity"></activity>
+        
+        
+        
+</application>
+
+</manifest>
